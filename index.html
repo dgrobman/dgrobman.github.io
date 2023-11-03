@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Yes</h1>
+<head>
+<script>
+function davidStatus(){
+	var isDavidAvailable = Array("I'm never available, stop asking.", "Sick a duck", "404 david not found", "503 David unavailable", "No", "Yes", "Who's asking?");
+	var rand = Math.floor(Math.random()*isDavidAvailable.length);
+    return isDavidAvailable[rand];
+}
+</script>
+</head>
+<h1 id="demo">The script element</h1>
+
+<script>
+document.getElementById("demo").innerText = davidStatus();
+
+</script> 
+
 </body>
 </html>
