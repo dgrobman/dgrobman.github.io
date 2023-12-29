@@ -4,7 +4,7 @@
 <head>
 <script>
 function davidStatus(){
-	var isDavidAvailable = Array("404 David Not Found", "503 David Temporarily Unavailable", "200 David Available", "Yes", "Please refer to ischrisavailable.com");
+	var isDavidAvailable = Array("404 David Not Found", "503 David Temporarily Unavailable", "200 David Available", "Yes", "Please refer to <a href='http://ischrisavailable.com'>ischrisavailable.com</a>");
 	var rand = Math.floor(Math.random()*isDavidAvailable.length);
     return isDavidAvailable[rand];
 }
@@ -13,7 +13,7 @@ function davidStatus(){
 <h1 id="demo">The script element</h1>
 
 <script>
-document.getElementById("demo").innerText = davidStatus();
+document.getElementById("demo").innerHTML = davidStatus();
 
 </script> 
 
